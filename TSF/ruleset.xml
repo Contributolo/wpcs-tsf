@@ -104,6 +104,12 @@
 
 		<!-- Doesn't matter. Noise. -->
 		<exclude name="Universal.CodeAnalysis.StaticInFinalClass"/>
+
+		<!-- Inaccurate check. Noise. -->
+		<exclude name="WordPress.WP.CronInterval.ChangeDetected"/>
+
+		<!-- Bad practice, see https://github.com/WordPress/WordPress-Coding-Standards/issues/2374 -->
+		<exclude name="WordPress.Security.EscapeOutput.ExceptionNotEscaped"/>
 	</rule>
 
 	<rule ref="Squiz.PHP.CommentedOutCode">
