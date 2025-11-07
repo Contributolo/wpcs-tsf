@@ -70,6 +70,9 @@
 		<exclude name="PEAR.Functions.FunctionCallSignature.ContentAfterOpenBracket"/>
 		<exclude name="PEAR.Functions.FunctionCallSignature.CloseBracketLine"/>
 
+		<!-- Although this rule is needed, we also want to use precision alignment; this one conflicts -->
+		<exclude name="PEAR.Functions.FunctionCallSignature.Indent"/>
+
 		<!-- TEMP - Revisit this later. We don't add short descriptions for actions, filters, and properties. -->
 		<exclude name="Generic.Commenting.DocComment.MissingShort"/>
 
