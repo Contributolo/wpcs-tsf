@@ -19,6 +19,8 @@
 		<!-- We don't require redundant PHP <5.4 support, nor do we limit depth. The UTF-8 failsafe for json_encode is edge-case on PHP<5.5 only. -->
 		<exclude name="WordPress.WP.AlternativeFunctions.json_encode_json_encode"/>
 		<exclude name="WordPress.WP.AlternativeFunctions.parse_url_parse_url"/>
+		<!-- We never use file_get_contents for remote files. Suppressing the warning is annoying. -->
+		<exclude name="WordPress.WP.AlternativeFunctions.file_system_operations_file_put_contents"/>
 
 		<!-- No. mt_rand() is perfectly fine. -->
 		<exclude name="WordPress.WP.AlternativeFunctions.rand_mt_rand"/>
